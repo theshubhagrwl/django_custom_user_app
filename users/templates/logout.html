@@ -1,0 +1,18 @@
+{% include "registration/header.html" %}
+
+    <title>Logout</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron">
+{% if user.is_authenticated %}
+<h3>You are authenticated as {{ user.name }}</h3>
+{% else %}
+<h3>{{mes}}</h3>
+{% endif %}
+
+</div>
+</div>
+</body>
+</html>
